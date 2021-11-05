@@ -34,7 +34,7 @@ class LanguageScreen extends StatelessWidget {
                       height: 10,
                     ),
                     LanguageCards(
-                      title: 'Rus tili',
+                      title: 'Русский язык',
                       imageName: 'images/russianflag.png',
                       function: () {},
                     ),
@@ -42,7 +42,7 @@ class LanguageScreen extends StatelessWidget {
                       height: 10,
                     ),
                     LanguageCards(
-                      title: 'Ingliz tili',
+                      title: 'English',
                       imageName: 'images/usaflag.png',
                       function: () {},
                     )

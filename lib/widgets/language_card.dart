@@ -5,7 +5,8 @@ class LanguageCards extends StatelessWidget {
   String title, imageName;
   Function() function;
 
-  LanguageCards({required this.title, required this.function, required this.imageName});
+  LanguageCards(
+      {required this.title, required this.function, required this.imageName});
 
   @override
   Widget build(BuildContext context) {
@@ -16,16 +17,27 @@ class LanguageCards extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         child: Row(
           children: [
-            Image.asset(imageName, height: 50, width: 50,),
-            SizedBox(
-              width: 80,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(80),
+              child: Image.asset(
+                imageName,
+                height: 50,
+                width: 50,
+                fit: BoxFit.fill,
+              ),
             ),
-            Text(title, style: kPoppinsBigSizeWith700W, textAlign: TextAlign.center),
+            Expanded(
+              child: Text(
+                title,
+                style: kPoppinsBigSizeWith700W,
+                textAlign: TextAlign.center,
+              ),
+            ),
           ],
         ),
         decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.all(Radius.circular(20))),
+            borderRadius: BorderRadius.all(Radius.circular(25))),
       ),
     );
   }

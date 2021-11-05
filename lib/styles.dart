@@ -20,3 +20,10 @@ TextStyle kPoppinsSmallSizeWith400W = TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.w400,
 );
+
+TextStyle kPoppinsMediumSizeWith700w = TextStyle(
+  color: Colors.purple[900],
+  fontFamily: 'fonts/Poppins-Regular.ttf',
+  fontSize: 16,
+  fontWeight: FontWeight.w700,
+);
