@@ -29,7 +29,7 @@ class LanguageCards extends StatelessWidget {
             Expanded(
               child: Text(
                 title,
-                style: kPoppinsBigSizeWith700W,
+                style: kPoppinsMediumSizeWith700w,
                 textAlign: TextAlign.center,
               ),
             ),
