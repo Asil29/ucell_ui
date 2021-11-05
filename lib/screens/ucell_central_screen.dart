@@ -33,12 +33,13 @@ class UcellCentralAddressScreen extends StatelessWidget {
                               color: Colors.white, width: 30, height: 30),
                         ),
                       ),
-                      SizedBox(
-                        width: 100,
-                      ),
-                      Text(
-                        'Ucell-Markaziy',
-                        style: TextStyle(color: Colors.white),
+                      
+                      Expanded(
+                        child: Text(
+                          'Ucell-Markaziy',
+                          style: kPoppinsBigSizeWith400W,
+                          textAlign: TextAlign.center
+                        ),
                       ),
                     ],
                   ),

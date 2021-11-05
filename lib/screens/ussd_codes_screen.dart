@@ -35,12 +35,13 @@ class UssdCodesScreen extends StatelessWidget {
                               color: Colors.white, width: 30, height: 30),
                         ),
                       ),
-                      SizedBox(
-                        width: 100,
-                      ),
-                      Text(
-                        'USSD kodlar',
-                        style: kPoppinsBigSizeWith400W,
+                     
+                      Expanded(
+                        child: Text(
+                          'USSD kodlar',
+                          style: kPoppinsBigSizeWith400W,
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),

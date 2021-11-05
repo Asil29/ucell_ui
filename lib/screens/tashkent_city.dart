@@ -34,12 +34,13 @@ class TashkentCityScreen extends StatelessWidget {
                               color: Colors.white, width: 30, height: 30),
                         ),
                       ),
-                      SizedBox(
-                        width: 100,
-                      ),
-                      Text(
-                        'Toshkent shahri',
-                        style: kPoppinsBigSizeWith400W,
+                      
+                      Expanded(
+                        child: Text(
+                          'Toshkent shahri',
+                          style: kPoppinsBigSizeWith400W,
+                          textAlign: TextAlign.center
+                        ),
                       ),
                     ],
                   ),

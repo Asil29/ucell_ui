@@ -34,12 +34,13 @@ class OurAdressesScreen extends StatelessWidget {
                           color: Colors.white, width: 30, height: 30),
                     ),
                   ),
-                  SizedBox(
-                    width: 85,
-                  ),
-                  Text(
-                    'Bizning manzillar',
-                    style: kPoppinsBigSizeWith400W,
+                  
+                  Expanded(
+                    child: Text(
+                      'Bizning manzillar',
+                      style: kPoppinsBigSizeWith400W,
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ],
               ),
