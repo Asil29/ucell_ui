@@ -33,8 +33,7 @@ class OurAdressesScreen extends StatelessWidget {
                       child: Image.asset('images/back.png',
                           color: Colors.white, width: 30, height: 30),
                     ),
-                  ),
-                  
+                  ),            
                   Expanded(
                     child: Text(
                       'Bizning manzillar',

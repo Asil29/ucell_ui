@@ -33,7 +33,6 @@ class UcellCentralAddressScreen extends StatelessWidget {
                               color: Colors.white, width: 30, height: 30),
                         ),
                       ),
-                      
                       Expanded(
                         child: Text(
                           'Ucell-Markaziy',
