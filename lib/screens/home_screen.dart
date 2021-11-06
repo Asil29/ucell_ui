@@ -23,10 +23,8 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         child: Stack(
-          fit: StackFit.expand,
           children: [
-            SizedBox(height: 50),
-            Column(
+            ListView(
               children: [
                 Container(
                   margin: EdgeInsets.only(left: 20, right: 20, top: 140),
@@ -47,6 +45,8 @@ class HomeScreen extends StatelessWidget {
                     mainAxisSpacing: 15,
                     crossAxisCount: 2,
                     padding: EdgeInsets.all(20),
+                    physics: NeverScrollableScrollPhysics(),
+                    shrinkWrap: true,
                     children: [
                       HomeScreenItems(
                         imagename: 'images/sim.png',
@@ -83,34 +83,40 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.all(15),
-                  padding: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                      color: Color(0xFF6B2C82),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        NavBarIcons(
-                          imageTitle: 'images/homepage.png',
-                        ),
-                        NavBarIcons(
-                          imageTitle: 'images/star.png',
-                        ),
-                        NavBarIcons(
-                          imageTitle: 'images/viber.png',
-                        ),
-                        NavBarIcons(
-                          imageTitle: 'images/question.png',
-                        ),
-                        NavBarIcons(
-                          imageTitle: 'images/setting.png',
-                        ),
-                      ]),
-                )
               ],
-            )
+            ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Container(
+                width: double.infinity,
+                height: 60,
+                margin: EdgeInsets.all(15),
+                padding: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                    color: Color(0xFF6B2C82),
+                    borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    NavBarIcons(
+                      imageTitle: 'images/homepage.png',
+                    ),
+                    NavBarIcons(
+                      imageTitle: 'images/star.png',
+                    ),
+                    NavBarIcons(
+                      imageTitle: 'images/viber.png',
+                    ),
+                    NavBarIcons(
+                      imageTitle: 'images/question.png',
+                    ),
+                    NavBarIcons(
+                      imageTitle: 'images/setting.png',
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
